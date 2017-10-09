@@ -7,7 +7,8 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 #System Administrator Role
-class System_Administrator(models.Model):
+System_Administrator(date, uname):
+    # requests
     Date =
     username =
     def __str__(self):
@@ -16,6 +17,7 @@ class System_Administrator(models.Model):
 
 #Doctor Role
 class Doctor(models.Model):
+    # requests
     Practice_Name =
     Practice_Address =
     Recovery_Phrase =
@@ -28,6 +30,7 @@ class Doctor(models.Model):
 
 #Nurse Role
 class Nurse(models.Model):
+    # requests
     Practice_Name =
     Practice_Address =
     Associated_Doctors =
@@ -38,6 +41,7 @@ class Nurse(models.Model):
 
 #Medical Administrator Role
 class Medical_Administrator(models.Model):
+    # requests
     Practice_Name =
     Practice_Address =
     Associated_Doctors =
@@ -49,6 +53,7 @@ class Medical_Administrator(models.Model):
 
 #Insurance Administrator Role
 class Insurance_Administrator(models.Model):
+    # requests
     Company_Name =
     Company_Address =
     username =
@@ -58,6 +63,7 @@ class Insurance_Administrator(models.Model):
 
 #Patient Role
 class Patient(models.Model):
+    # requests
     SSN =
     Address =
     DOB =
@@ -68,6 +74,7 @@ class Patient(models.Model):
 
 #Record
 class Record(models.Model):
+    # requests
     Record_ID =
     lst =
     options =
@@ -83,6 +90,7 @@ class Record(models.Model):
 
 #Doctor Exam Record
 class Doctor_Exam_Record(models.Model):
+    # requests
     Date =
     Doctor =
     Notes =
@@ -93,6 +101,7 @@ class Doctor_Exam_Record(models.Model):
 
 #Diagnosis Record
 class Diagnosis_Record(models.Model):
+    # requests
     Date =
     Doctor =
     Diagnosis =
@@ -103,6 +112,7 @@ class Diagnosis_Record(models.Model):
 
 #Test Results Record
 class Test_Results_Record(models.Model):
+    # requests
     Date =
     Doctor =
     Lab =
@@ -115,6 +125,7 @@ class Test_Results_Record(models.Model):
 
 #Insurance Claim Record
 class Insurance_Claim_Record(models.Model):
+    # requests
     Date =
     Medical_Administrator =
     Amount =
@@ -128,6 +139,7 @@ class Insurance_Claim_Record(models.Model):
 
 #Patient_Doctor_Correspondence_Record
 class Patient_Doctor_Correspondence_Record(models.Model):
+    # requests
     Doctor =
     Notes =
     Record =
@@ -137,6 +149,7 @@ class Patient_Doctor_Correspondence_Record(models.Model):
 
 #Raw Record
 class Raw_Record(models.Model):
+    # requests
     Description =
     File =
     Record =
@@ -146,6 +159,7 @@ class Raw_Record(models.Model):
 
 #Note
 class Note(models.Model):
+    # requests
     Date =
     Text =
     Patient_Doctor_Correspondence =
